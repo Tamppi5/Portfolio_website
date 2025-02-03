@@ -9,30 +9,60 @@ body {
   font-size: 16px;
   color: #9EF5CF;
   margin: 0;
-  padding: 0;
+  padding: 0 15%;  /* Add horizontal padding */
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+h1 {
+    justify-content: center;
+    font-size: 36px;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 20px 0;
+    max-width: 1200px;  /* Control maximum width */
+}
+
+.project-content {
+    flex: 2;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
-  max-width: 300px;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
 }
 
 nav {
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
-a:hover {
+.navi:hover {
   color: white;
   background-color: black;
   cursor: pointer;
 }
 
-a {
+.navi {
   color: black;
   background-color: white;
   padding: 8px 16px;  /* Add padding */
@@ -43,13 +73,7 @@ a {
   border-radius: 4px;  /* Optional: rounded corners */
 }
 
-h1 {
-  justify-content: center;
-  font-size: 36px;
-  text-align: center;
-}
-
 h2 {
   font-size: 32px;
-  text-align: center;
+  text-align: left;
 }
