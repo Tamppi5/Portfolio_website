@@ -14,7 +14,6 @@ body {
 
 .container {
   display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
@@ -24,6 +23,7 @@ img {
 
 nav {
   justify-content: center;
+  margin: 20px 0;
 }
 
 a:hover {
@@ -52,4 +52,21 @@ h1 {
 h2 {
   font-size: 32px;
   text-align: center;
+}
+
+.description {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.description h2 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+
+.description p {
+    line-height: 1.6;
+    color: var(--text-secondary);
 }
