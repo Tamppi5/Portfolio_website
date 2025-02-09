@@ -102,10 +102,10 @@ h1 {
   object-fit: cover;
   object-position: center 10%;
   background-color: #fff;
-  filter: brightness(0.8);
+  filter: brightness(0.8); /* Added filter to make image slightly darker */
 }
 
-/* Loput sivusta, lisätään padding */
+/* Rest of page */
 
 .rest-of-page {
   padding: 0px 32px 0px 32px;
