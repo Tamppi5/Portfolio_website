@@ -2,71 +2,213 @@
 /* Laita tänne omat tyylittelyt :D */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
+:root {
+  --primary-bg: #000000;
+  --text-color: #ffffff;
+  --accent-color: rgb(73, 73, 73);
+  --font-size-large: 32px;
+  --font-size-nav: 18px;
+}
 
 body {
-  background-color: #315C71;
-  font-family: Inter;
-  font-size: 16px;
-  color: #9EF5CF;
+  min-height: 100vh;
+  background-color: var(--primary-bg);
+  font-family: 'Inter', sans-serif;
+  color: var(--text-color);
   margin: 0;
-  padding: 0;
+  padding: 0px;
+  line-height: 1.6;
 }
 
-.container {
-  display: flex;
-  align-items: center;
+.hero-section {
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.4)
+  ), url('../images/TtjLdl8-northern-lights-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding-bottom: 60px;
+  min-height: 20vh;
 }
 
-img {
-  max-width: 300px;
-}
 
+/* Navigaatio */
 nav {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
-  margin: 20px 0;
-}
-
-a:hover {
-  color: white;
+  gap: 32px;
+  margin: 0px 0;
+  padding: 20px 32px 20px 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   background-color: black;
-  cursor: pointer;
 }
 
-a {
-  color: black;
-  background-color: white;
-  padding: 8px 16px;  /* Add padding */
-  margin: 8px 10px;  /* Add margin */
-  text-decoration: none;  /* Remove underline */
-  transition: all 0.3s ease;  /* Smooth transition */
-  display: inline-block;  /* Helps with padding */
-  border-radius: 4px;  /* Optional: rounded corners */
+
+nav a {
+  color: var(--text-color);
+  font-size: var(--font-size-nav);
+  font-weight: 400;
+  text-decoration-line: underline;
+  text-decoration-color: transparent;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+  background-color: transparent;
+  transition: text-decoration-color 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+  text-decoration-color: white;
+  background-color: var(--accent-color);
+}
+
+/* Otsikko -osio*/
+
+header {
+  margin: 20px auto;
+  max-width: 340px;
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+
 }
 
 h1 {
-  justify-content: center;
-  font-size: 36px;
+  font-size: var(--font-size-large);
+  margin: 0;
   text-align: center;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
-h2 {
-  font-size: 32px;
+.profile-image {
+  display: flex;
+  justify-content: center;
   text-align: center;
+  margin: 0px auto;
+  padding: 48px 0px 0px 0px;
 }
+
+.profile-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 10%;
+  background-color: #fff;
+  filter: brightness(0.8);
+}
+
+/* Rest of page */
+
+.rest-of-page {
+  padding: 0px 32px 0px 32px;
+}
+
+/* Kuvaus -osio */
+
 
 .description {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    text-align: center;
-}
-
-.description h2 {
-    color: var(--text-primary);
-    margin-bottom: 1rem;
+  margin: 32px auto;
+  max-width: 400px;
 }
 
 .description p {
-    line-height: 1.6;
-    color: var(--text-secondary);
+  text-align: left;
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* CV -osio */
+
+.cv-everything h2 {
+  font-weight: bold !important;
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.cv-everything h3 {
+  font-size: 16px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.cv-everything p {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+.cv-expedu {
+  margin: 40px auto;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (min-width: 700px) {
+  .cv-expedu {
+    flex-direction: row;
+    max-width: 800px;
+  }
+  
+  .cv-section {
+    flex: 1;
+    }
+}
+
+.cv-section {
+  padding: 0px 24px 24px 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+.download_CV {
+  text-align: center;
+  margin: 32px 0;
+}
+
+.download_button {
+  display: inline-block;
+  padding: 14px 28px;
+  background-color: var(--text-color);
+  color: var(--primary-bg);
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.download_button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: var(--accent-color);
+}
+
+.contact-info {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+.contact-info h3 {
+  margin-bottom: 4px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  font-size: 14px;
 }
