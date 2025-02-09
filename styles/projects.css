@@ -139,7 +139,6 @@ h1 {
 
 .check_out {
   color: var(--text-color);
-  text-decoration: none;
   font-weight: 500;
   text-decoration: underline;
 }
