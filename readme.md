@@ -29,3 +29,5 @@ Ehkä haastavinta oli juuri CSS-muotoilujen tekeminen ja viilaaminen. Tuntuu ett
 Arvio tunnin tarkkuudella riittää.
 
 Minulla meni aikaa noin 19h.
+
+PS. Jotkut commitit laitoin viestillä englanniksi, koska tein sivun englanniksi mahdollisia suomea osaamattomia rekrytoijia varten ja jäi vahingossa sama kieli päälle commit-viestiä kirjoittaessa :D 
