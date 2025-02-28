@@ -1,4 +1,4 @@
-// Valitaan koko näytön kokoinen kuva, joka näytetään kun pienempää kuvaa klikataan sekä 'img'-viewer' divi, joka sisältää koko näytön kokoisen kuvan
+// Valitaan koko näytön kokoinen kuva, joka näytetään kun pienempää kuvaa klikataan sekä 'img'-viewer' div, joka sisältää koko näytön kokoisen kuvan
 const fullScreenImage = document.querySelector("#full-screen-image");
 const imgViewer = document.querySelector("#img-viewer");
 

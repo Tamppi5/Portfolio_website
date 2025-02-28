@@ -13,8 +13,6 @@ const cBoxes = Array.from(document.querySelectorAll(".project-wrapper .c"));
 // Yhdistetään kaikki projektilaatikko arrayt yhteen arrayhin
 const allBoxes = [...aBoxes, ...bBoxes, ...cBoxes];
 
-// Lisää ylläolevasta syntaksista: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
-
 
 
 // Lisätään tapahtumakuuntelija jokaiselle napille:
@@ -87,7 +85,7 @@ reset.addEventListener("click", () => {
   buttonC.classList.remove("active");
   
   allBoxes.map((box) => {
-    // Asetetaan kaikki laatikot näkyviin ja palautetaan niiden opacity alkuperäiseksi
+    // Asetetaan kaikki laatikot näkyviin alkuperäisellä asettelulla
     box.style.display = "";
   });
 });

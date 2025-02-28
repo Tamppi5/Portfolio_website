@@ -1,3 +1,5 @@
+/* filter.js:n tyyliasetukset */
+
 .filters {
     margin: auto;
     display: flex;
@@ -32,7 +34,7 @@
     }
 }
 
-/* Muuta filtterinappuloiden sijaintia mobiililaitteilla sopivammaksi */
+/* Muuta filtterinappuloiden sijaintia pienemmillä leveyksillä mobiililaitteilla sopivammaksi */
 
 @media screen and (max-width: 518px) {
     .filters {

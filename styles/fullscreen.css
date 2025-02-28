@@ -1,3 +1,5 @@
+/* Koko näytön kuvan tyyliasetukset */
+
 #img-viewer {
     display: none;
     position: fixed;
