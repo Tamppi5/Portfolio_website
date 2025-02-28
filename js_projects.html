@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tapio Tuloisela - Portfolio</title>
+    <link rel="stylesheet" href="styles/filter.css" />
+
+    <link rel="stylesheet" href="styles/projects.css" />
+    <link rel="stylesheet" href="styles/fullscreen.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  </head>
+  <body>
+    <nav>
+        <a class="navi" href="js_index.html">Home</a>
+        <a class="navi" href="js_projects.html">Projects</a>
+        <a class="navi" href="js_about.html">About Me</a>
+    </nav>
+    <header>
+        <h1>Projects</h1>
+    </header>
+
+    <section class="projects-section">
+
+        <p>Here you can find some of the projects I've worked on.</p>
+
+        <div class="filters">
+            <p>Filters:</p>
+            <div id="filter-psychology" class="filter-button a">#research</div>
+            <div id="filter-machine-learning" class="filter-button b">#machine learning</div>
+            <div id="filter-tools" class="filter-button c">#tools</div>
+            <div id="filter-reset">reset</div>
+        </div>
+
+        <div class="project-wrapper">
+            <article class="project-container a">
+                <div class="project-content">
+                    <h2>A conceptual framework to evaluate economic decision-making in Human-Computer Interaction</h2>
+                    <p>
+                        As a part of my bachelor's thesis, I developed a framework to evaluate decision-making in
+                        economic games. The framework differed from pre-existing frameworks in that it considered interactions
+                        with non-human agents, such as AI players. My thesis as a whole considered the use of game-theory as
+                        a tool to evaluate economic decision-making in Human-Computer Interaction.
+                    </p>
+                    <div class="project-bottom">
+                        <div class="image-container">
+                            <img src="images/framework.jpg" class="img-source" alt="Picture from my thesis" width="150">
+                        </div>
+                        <p>See more: <a href="pdfs/SCI_2024_Tuloisela_Tapio.pdf" class="check_out">My bachelor's thesis</a></p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-container b">
+                <div class="project-content">
+                    <h2>Machine learning model to predict user activity from smartphone's sensor data</h2>
+                    <p>
+                        I developed a machine learning model as part of course CS-C3240 "Machine Learning", which was trained
+                        on a dataset of smartphone sensor data. Two machine learning methods were used:
+                        logistic regression and decision trees. I then compared the performance of the two methods.
+                        Both of the methods were able to predict user activity from unseen smartphone sensory data with a good accuracy.
+                    </p>
+                    <div class="project-bottom">
+                        <div class="image-container">
+                            <img src="images/ML_pic.jpg" class="img-source" alt="Describing image of the ML project" width="150">
+                        </div>
+                        <p>See more: <a href="pdfs/Predicting_user_activity_from_smartphones_sensor_data.pdf" class="check_out">Report</a></p>
+                    </div>
+                </div>
+            </article>
+        
+            <article class="project-container a">
+                <div class="project-content">
+                    <h2>Study on psychological effects of social media on students</h2>
+                    <p>
+                        We conducted a questionnaire study with my fantastic group to investigate the relationship
+                        of psychological effects and social media usage on students. We used a survey to collect
+                        the data and analyzed it using R. The study was presented to professors and doctoral researchers
+                        in Aalto University. The report is currently only available in Finnish.
+                    </p>
+                    <div class="project-bottom">
+                        <div class="image-container">
+                            <img src="images/tutkimusprojekti.png" class="img-source" alt="Describing image of the study" width="150">
+                        </div>
+                        <p>See more: <a href="pdfs/CS-C4040-Raportti_FINAL2.0_LateBreakingFormat.pdf" class="check_out">Report</a></p>
+                    </div>
+                </div>
+            </article>
+            
+    
+            <article class="project-container c">
+                <div class="project-content">
+                    <h2>Discord bot to play music on voice channel with natural language query</h2>
+                    <p>
+                        As the widely used Discord bot "Rhythm" that usually plays music on voice channels was down,
+                        I did a small project to develop a Discord bot that plays music by downloading the audio from Youtube
+                        and playing it online similarly as the "Rhythm" bot. You could prompt the bot a natural language search query
+                        and it automatically found the most relevant audio from Youtube and played it.
+                    </p>
+                    <div class="project-bottom">
+                        <div class="image-container">
+                            <img src="images/discordbot2.jpg" class="img-source" alt="Describing image of the bot interaction" width="150">
+                        </div>
+                        <p>See more: <a href="https://github.com/Tamppi5/discord_musiikki-botti" class="check_out">Github</a></p>
+                    </div>
+                </div>
+            </article>
+        
+            <article class="project-container c">
+                <div class="project-content">
+                    <h2>Scala library to visualize numerical data</h2>
+                    <p>
+                        I created a data-visualization library for numerical json-formatted data. The library formed a graph that represented the
+                        inputted data and automatically adjusted the graph's range and scale for values depending on the data. Users could also
+                        name the graph axis and add a title to the graph.
+                    </p>
+                    <div class="project-bottom">
+                        <div class="image-container">
+                            <img src="images/data_visualization.jpg" class="img-source" alt="Describing image of the graph" width="150">
+                        </div>
+                        <p>See more: <a href="pdfs/TapioTuloisela_DataVisualization_document.pdf" class="check_out">Report</a> and <a href="https://github.com/Tamppi5/Visualizing-data_project" class="check_out">Github</a></p>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+    </section>
+
+    <div id="img-viewer">
+        <img id="full-screen-image" alt="Full screen image">
+        <button id="close-image-button">Close</button>
+    </div>
+
+    <footer class="contact-info">
+        <h3>Contact</h3>
+        <p>Email: tapio.tuloisela@aalto.fi</p>
+        <p>Phone: +358 45 2747824</p>
+    </footer>
+
+    <script defer src="scripts/filter.js"></script>
+    <script defer src="scripts/fullscreen.js"></script>
+
+  </body>
+</html>

@@ -10,7 +10,7 @@ Tapio Tuloisela
 
 1032488
 ## Linkki netissä pyörivään sivustoon
-https://users.aalto.fi/~tuloist1/index.html
+https://users.aalto.fi/~tuloist1/js_index.html
 
 ## Mitkä asiat teit
 
@@ -30,4 +30,18 @@ Arvio tunnin tarkkuudella riittää.
 
 Minulla meni aikaa noin 19h.
 
-PS. Jotkut commitit laitoin viestillä englanniksi, koska tein sivun englanniksi mahdollisia suomea osaamattomia rekrytoijia varten ja jäi vahingossa sama kieli päälle commit-viestiä kirjoittaessa :D 
+PS. Jotkut commitit laitoin viestillä englanniksi, koska tein sivun englanniksi mahdollisia suomea osaamattomia rekrytoijia varten ja jäi vahingossa sama kieli päälle commit-viestiä kirjoittaessa :D
+
+## JS Part 2:
+
+## Mitä toiminnallisuuksia toteutit ja kuinka paljon keräsit pisteitä?
+Toteutin toiminnallisuudet "Elementtien filtteröinti" (18p) ja "Avaa kuva koko ruudulle" (22p) eli yhteensä 40 pistettä.
+
+## Mikä oli helppoa?
+Koko kierros oli yllättävän vaivaton, kun käytti hyväksi valmiina annettuja nettisivujen materiaaleja ja otti niistä mallia.
+
+## Mikä oli haastavaa?
+Alkuun meni aikaa päästä kiinni sivuston navigointtiin ja eri komentojen keskinäisiin vaikutussuhteisiin.
+
+## Mikä oli kivaa?
+Kivaa oli saada toiminnallisuudet tehtyä ja huomata niiden toimivan :D
